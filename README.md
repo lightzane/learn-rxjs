@@ -88,3 +88,20 @@ from$
         complete: () => { console.log(`counter:`, counter); } // => counter: 5
     });
 ```
+
+**console result**
+
+```
+[ 1, 2, 3, 4, 5 ]
+counter: 1
+1
+2
+3
+4
+5
+counter: 5
+```
+
+`of()` would emit the whole array once
+
+`from()` would emit the value 1 by 1
