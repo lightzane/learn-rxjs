@@ -2,7 +2,7 @@
 import { Observable, of } from 'rxjs';
 import { map, switchMap, tap } from 'rxjs/operators';
 
-// of('Nat')
+// of('Jane')
 //     .pipe(
 //         map((name) => `${name}!`),
 //         tap((data) => console.log(`Last Christmas I wanted: ${data}`)),
@@ -18,7 +18,7 @@ const list = [
     },
     {
         id: 2,
-        name: 'Nat'
+        name: 'Jane'
     },
     {
         id: 3,
