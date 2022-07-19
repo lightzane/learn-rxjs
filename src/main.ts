@@ -9,7 +9,6 @@ observable$.subscribe(console.log); // => 0.41313804548289257
 // Subscriber 2
 observable$.subscribe(console.log); // => 0.09685619724245242
 
-
 // * Subjects are MULTICAST (and has access to next() - where you can actively emit the event)
 console.log('Subject');
 const subject$ = new Subject<number>();
