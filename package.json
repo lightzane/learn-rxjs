@@ -4,10 +4,10 @@
   "scripts": {
     "prestart": "npm run build",
     "start": "node dist/main",
-    "start:dev": "nodemon ./src/main.ts --watch src --exec \"npm run lint && nodemon\"",
+    "start:dev": "nodemon ./src/main.ts --watch src --exec \"npm run lint:dev && ts-node\"",
     "build": "tsc",
-    "lint": "eslint {src,test}/**/*.ts",
-    "lint:fix": "eslint {src,test}/**/*.ts --fix"
+    "lint": "eslint {src,test}/**/*.ts --fix",
+    "lint:dev": "eslint {src,test}/**/*.ts --max-warnings 2"
   },
   "engines": {
     "node": ">= 16.14.2",
